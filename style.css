@@ -1,0 +1,121 @@
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+h1 {
+  font-family: "Bungee Shade", Helvetica, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+  background-color: hsl(216, 30.6%, 9.6%);
+  font-size: 32px;
+  margin: 0;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  justify-content: center;
+}
+.red {
+  color: #ea4335;
+}
+
+.yellow {
+  color: #fbbc05;
+}
+
+.blue{
+  color: #4285f4;
+}
+
+/* MAIN BODY */
+.content {
+  background-color: #666666;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: "Atomic Age", "Anonymous Pro", Helvetica, Arial;
+  font-size: 48px;
+  color: white;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: hsl(216, 30.6%, 9.6%);
+  font-family: "Anonymous Pro", Helvetica, Arial, 'Franklin Gothic Medium';
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+/* ACTION BUTTONS */
+button {
+  font-family: "Atomic Age", "Anonymous Pro", Helvetica, Arial;
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+#scissorsSpan {
+  background: #ea4335;
+}
+#scissors {
+  background: #b53529;
+}
+
+#paperSpan {
+  background: #fbbc05;
+}
+#paper {
+  background: #c59503;
+}
+
+#stoneSpan {
+  background: #4285f4;
+}
+#stone {
+  background: #2c60b3;
+}
+
+.pushable {
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+.front {
+  display: flex;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  color: white;
+  transform: translateY(-6px);
+  height: 96px;
+  align-items: center;
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+}
