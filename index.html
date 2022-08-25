@@ -20,28 +20,28 @@
   </div>
   <div class="content">
     <h2 class="title">Make your choice:</h2>
-    
+    <p id="roundStatus">First to 5 wins</p>
     <div class="actionButtons">
-      <button class="pushable" id="scissors">
+      <button class="pushable" id="scissors" value="Scissors" onclick=playRound(this)>
         <span class="front" id="scissorsSpan">
           <h3>✌🏻</h3>
           <p>Scissors</p>
         </span>
       </button>
-      <button class="pushable" id="paper">
+      <button class="pushable" id="paper" value="Paper" onclick=playRound(this)>
         <span class="front" id="paperSpan">
           <h3>✋🏻</h3>
           <p>Paper</p>
         </span>
       </button>
-      <button class="pushable" id="stone">
+      <button class="pushable" id="stone" value="Stone" onclick=playRound(this)>
         <span class="front" id="stoneSpan">
           <h3>👊🏻</h3>
           <p>Stone</p>
         </span>
       </button>
     </div>
-
+    
     <div class="scoreboard">
       <h2 class="title">Scoreboard:</h2>
       <div class="scores">
@@ -58,8 +58,9 @@
       </div>
     </div>
   </div>
-    <div class="footer">
-      <p>&copy Syazwan Bin Jainal 2022</p>
-    </div>
-  </body>
+  <div class="footer">
+    <p>&copy Syazwan Bin Jainal 2022</p>
+  </div>
+  <script type="text/javascript" src="rps.js"></script>
+</body>
 </html>
