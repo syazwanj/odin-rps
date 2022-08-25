@@ -66,10 +66,25 @@ function playRound(element) {
           document.getElementById("roundStatus").innerText = "Computer wins this round!";
       break;
   }
+  checkComplete();
 }
 
+function checkComplete() {
+  if (humanScore == 5) {
+    alert("WE HAVE DEFEATED THE MACHINES!");
+    resetValues();
+  }
+  else if (cpuScore == 5){
+    alert("COMPUTERS WILL TAKE OVER HUMANITY");
+    resetValues();
+  }
+}
 
-for (let i=0; i<5; i++) {
-  console.log(getComputerChoice());
-  humanScoreText=getComputerChoice();
+function resetValues() {
+  humanScore = 0;
+  cpuScore = 0;
+  document.getElementById("score1").innerText = "0";
+  document.getElementById("score2").innerText = "0";
+  document.getElementById("roundStatus").innerText = "Click any button to play again.";
+
 }
